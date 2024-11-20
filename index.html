@@ -1,0 +1,251 @@
+<html><head><base href="https://luxessence.ao/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LuxEssence - Perfumes de Luxo em Luanda, Angola</title>
+<style>
+  :root {
+    --primary-color: #8a2be2;
+    --secondary-color: #ffd700;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  nav {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--primary-color);
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    padding: 1rem;
+  }
+  
+  .product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-price {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .btn-ver-mais {
+    display: block;
+    width: 200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-ver-mais:hover {
+    background-color: #6a1cb2;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">LuxEssence</div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/produtos">Produtos</a></li>
+      <li><a href="/sobre">Sobre Nós</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h1 class="fade-in">Bem-vindo à LuxEssence</h1>
+    <p>Descubra a essência do luxo com nossa coleção exclusiva de perfumes premium. Entrega disponível apenas em Luanda, Angola.</p>
+    
+    <div class="product-grid">
+      <div class="product-card fade-in">
+        <img src="perfume1.jpg" alt="Frasco de perfume elegante com design floral dourado" class="product-image" width="250" height="200">
+        <div class="product-info">
+          <div class="product-name">Flor de Ouro</div>
+          <div class="product-price">25.000 Kz</div>
+        </div>
+      </div>
+      <div class="product-card fade-in">
+        <img src="perfume2.jpg" alt="Frasco de perfume azul com design moderno e minimalista" class="product-image" width="250" height="200">
+        <div class="product-info">
+          <div class="product-name">Brisa Oceânica</div>
+          <div class="product-price">30.000 Kz</div>
+        </div>
+      </div>
+      <div class="product-card fade-in">
+        <img src="perfume3.jpg" alt="Frasco de perfume vermelho em forma de coração" class="product-image" width="250" height="200">
+        <div class="product-info">
+          <div class="product-name">Paixão Ardente</div>
+          <div class="product-price">35.000 Kz</div>
+        </div>
+      </div>
+      <div class="product-card fade-in">
+        <img src="perfume4.jpg" alt="Frasco de perfume preto com detalhes em prata" class="product-image" width="250" height="200">
+        <div class="product-info">
+          <div class="product-name">Noite Estrelada</div>
+          <div class="product-price">40.000 Kz</div>
+        </div>
+      </div>
+      <div class="product-card fade-in">
+        <img src="perfume5.jpg" alt="Frasco de perfume verde em forma de folha" class="product-image" width="250" height="200">
+        <div class="product-info">
+          <div class="product-name">Selva Tropical</div>
+          <div class="product-price">28.000 Kz</div>
+        </div>
+      </div>
+      <div class="product-card fade-in">
+        <img src="perfume6.jpg" alt="Frasco de perfume roxo com design art déco" class="product-image" width="250" height="200">
+        <div class="product-info">
+          <div class="product-name">Glamour Noturno</div>
+          <div class="product-price">45.000 Kz</div>
+        </div>
+      </div>
+      <div class="product-card fade-in">
+        <img src="perfume7.jpg" alt="Frasco de perfume dourado com design clássico" class="product-image" width="250" height="200">
+        <div class="product-info">
+          <div class="product-name">Tesouro Real</div>
+          <div class="product-price">50.000 Kz</div>
+        </div>
+      </div>
+      <div class="product-card fade-in">
+        <img src="perfume8.jpg" alt="Frasco de perfume rosa com design delicado e feminino" class="product-image" width="250" height="200">
+        <div class="product-info">
+          <div class="product-name">Pétalas de Rosa</div>
+          <div class="product-price">32.000 Kz</div>
+        </div>
+      </div>
+    </div>
+    
+    <a href="/produtos" class="btn-ver-mais">Ver Mais Produtos</a>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 LuxEssence. Todos os direitos reservados.</p>
+    <p>Entrega disponível apenas em Luanda, Angola.</p>
+  </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  const productCards = document.querySelectorAll('.product-card');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+  
+  productCards.forEach(card => {
+    observer.observe(card);
+  });
+});
+</script>
+</body></html>

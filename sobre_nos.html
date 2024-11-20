@@ -1,0 +1,328 @@
+<html><head><base href="https://luxessence.ao/sobre"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Nós - LuxEssence Perfumes | Luanda, Angola</title>
+<style>
+  :root {
+    --primary-color: #8a2be2;
+    --secondary-color: #ffd700;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  nav {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .about-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+
+  .about-hero {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('perfume-workshop.jpg') center/cover;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .hero-content {
+    padding: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+
+  .about-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .about-card {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f8f8;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .about-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .about-card svg {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+    fill: var(--primary-color);
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 3rem auto;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+
+  .timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 0.5s ease forwards;
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 50%;
+    transform: translateX(50px);
+  }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .timeline-content {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .values-section {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .value-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .value-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">LuxEssence</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/produtos">Produtos</a></li>
+      <li><a href="/sobre">Sobre Nós</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="about-container">
+    <div class="about-hero">
+      <div class="hero-content">
+        <h1>Nossa História</h1>
+        <p>Levando luxo e sofisticação para Luanda desde 2018</p>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h2>Quem Somos</h2>
+      <p>A LuxEssence nasceu do sonho de trazer as mais refinadas fragrâncias internacionais para o mercado angolano. Estabelecida em Luanda, nossa empresa se dedica a oferecer uma experiência única de compra de perfumes, com produtos autênticos e um atendimento personalizado de excelência.</p>
+      
+      <div class="about-grid">
+        <div class="about-card">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L1 21h22L12 2zm0 3.84L19.36 19H4.64L12 5.84zM11 16h2v2h-2v-2zm0-6h2v4h-2v-4z"/>
+          </svg>
+          <h3>Qualidade Garantida</h3>
+          <p>Todos os nossos produtos são originais e importados diretamente dos fabricantes</p>
+        </div>
+
+        <div class="about-card">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
+          </svg>
+          <h3>Entrega Segura</h3>
+          <p>Entrega rápida e segura em toda Luanda</p>
+        </div>
+
+        <div class="about-card">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+          </svg>
+          <h3>Atendimento Premium</h3>
+          <p>Equipe especializada para melhor atendê-lo</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>2018</h3>
+          <p>Fundação da LuxEssence em Luanda</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>2019</h3>
+          <p>Expansão do catálogo com novas marcas internacionais</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>2020</h3>
+          <p>Lançamento da loja online</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>2023</h3>
+          <p>Maior distribuidor de perfumes de luxo em Luanda</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="values-section">
+      <h2>Nossos Valores</h2>
+      <div class="value-cards">
+        <div class="value-card">
+          <h3>Autenticidade</h3>
+          <p>Garantimos a originalidade de todos os nossos produtos</p>
+        </div>
+
+        <div class="value-card">
+          <h3>Excelência</h3>
+          <p>Buscamos a perfeição em cada detalhe do nosso serviço</p>
+        </div>
+
+        <div class="value-card">
+          <h3>Compromisso</h3>
+          <p>Dedicação total à satisfação dos nossos clientes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Animação dos elementos da timeline
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  
+  const observerOptions = {
+    threshold: 0.5,
+    rootMargin: '0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateX(0)';
+      }
+    });
+  }, observerOptions);
+
+  timelineItems.forEach(item => {
+    observer.observe(item);
+  });
+
+  // Efeito hover nos cards
+  const aboutCards = document.querySelectorAll('.about-card');
+  aboutCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-10px)';
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0)';
+    });
+  });
+});
+</script>
+</body></html>

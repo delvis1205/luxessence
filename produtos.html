@@ -1,0 +1,325 @@
+<html><head><base href="https://luxessence.ao/produtos"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produtos - LuxEssence Perfumes | Luanda, Angola</title>
+<style>
+  :root {
+    --primary-color: #8a2be2;
+    --secondary-color: #ffd700;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  nav {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .filters {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .filter-section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .filter-section select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+
+  .products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .product-info {
+    padding: 1.5rem;
+  }
+
+  .product-category {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  .product-price {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .buy-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .buy-button:hover {
+    background-color: #7424c9;
+  }
+
+  .stock-status {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">LuxEssence</div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Início</a></li>
+      <li><a href="/produtos">Produtos</a></li>
+      <li><a href="/sobre">Sobre Nós</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="products-container">
+    <div class="filters">
+      <h3>Filtros</h3>
+      <div class="filter-section">
+        <select id="category-filter">
+          <option value="">Categoria</option>
+          <option value="feminino">Feminino</option>
+          <option value="masculino">Masculino</option>
+          <option value="unissex">Unissex</option>
+        </select>
+        <select id="price-filter">
+          <option value="">Preço</option>
+          <option value="0-25000">Até 25.000 Kz</option>
+          <option value="25000-50000">25.000 Kz - 50.000 Kz</option>
+          <option value="50000+">Acima de 50.000 Kz</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card fade-in">
+        <span class="stock-status">Em estoque</span>
+        <img src="flor-ouro.jpg" alt="Perfume Flor de Ouro em frasco dourado elegante" class="product-image" width="280" height="300">
+        <div class="product-info">
+          <div class="product-category">Feminino</div>
+          <div class="product-name">Flor de Ouro</div>
+          <div class="product-description">Notas florais com toque de baunilha e âmbar</div>
+          <div class="product-price">25.000 Kz</div>
+          <button class="buy-button">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <span class="stock-status">Em estoque</span>
+        <img src="brisa-oceanica.jpg" alt="Perfume Brisa Oceânica em frasco azul cristalino" class="product-image" width="280" height="300">
+        <div class="product-info">
+          <div class="product-category">Unissex</div>
+          <div class="product-name">Brisa Oceânica</div>
+          <div class="product-description">Fragrância aquática com notas cítricas</div>
+          <div class="product-price">30.000 Kz</div>
+          <button class="buy-button">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <span class="stock-status">Último em estoque</span>
+        <img src="noite-misteriosa.jpg" alt="Perfume Noite Misteriosa em frasco preto fosco" class="product-image" width="280" height="300">
+        <div class="product-info">
+          <div class="product-category">Masculino</div>
+          <div class="product-name">Noite Misteriosa</div>
+          <div class="product-description">Fragrância amadeirada com patchouli</div>
+          <div class="product-price">45.000 Kz</div>
+          <button class="buy-button">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <span class="stock-status">Em estoque</span>
+        <img src="rosa-damascena.jpg" alt="Perfume Rosa Damascena em frasco rosa vintage" class="product-image" width="280" height="300">
+        <div class="product-info">
+          <div class="product-category">Feminino</div>
+          <div class="product-name">Rosa Damascena</div>
+          <div class="product-description">Essência pura de rosa com jasmim</div>
+          <div class="product-price">55.000 Kz</div>
+          <button class="buy-button">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <span class="stock-status">Em estoque</span>
+        <img src="veludo-noir.jpg" alt="Perfume Veludo Noir em frasco aveludado negro" class="product-image" width="280" height="300">
+        <div class="product-info">
+          <div class="product-category">Unissex</div>
+          <div class="product-name">Veludo Noir</div>
+          <div class="product-description">Fragrância oriental com baunilha negra</div>
+          <div class="product-price">60.000 Kz</div>
+          <button class="buy-button">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <span class="stock-status">Em estoque</span>
+        <img src="aventura-selvagem.jpg" alt="Perfume Aventura Selvagem em frasco verde metálico" class="product-image" width="280" height="300">
+        <div class="product-info">
+          <div class="product-category">Masculino</div>
+          <div class="product-name">Aventura Selvagem</div>
+          <div class="product-description">Notas herbais com bergamota e cedro</div>
+          <div class="product-price">35.000 Kz</div>
+          <button class="buy-button">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const productCards = document.querySelectorAll('.product-card');
+  const categoryFilter = document.getElementById('category-filter');
+  const priceFilter = document.getElementById('price-filter');
+
+  const filterProducts = () => {
+    const selectedCategory = categoryFilter.value.toLowerCase();
+    const selectedPrice = priceFilter.value;
+
+    productCards.forEach(card => {
+      const category = card.querySelector('.product-category').textContent.toLowerCase();
+      const price = parseInt(card.querySelector('.product-price').textContent.replace(/[^0-9]/g, ''));
+      
+      let showByCategory = !selectedCategory || category.includes(selectedCategory);
+      let showByPrice = true;
+
+      if (selectedPrice) {
+        const [min, max] = selectedPrice.split('-').map(num => parseInt(num) || Infinity);
+        showByPrice = price >= min && price <= max;
+      }
+
+      card.style.display = showByCategory && showByPrice ? 'block' : 'none';
+    });
+  };
+
+  categoryFilter.addEventListener('change', filterProducts);
+  priceFilter.addEventListener('change', filterProducts);
+
+  // Adicionar ao carrinho
+  const buyButtons = document.querySelectorAll('.buy-button');
+  buyButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      const card = e.target.closest('.product-card');
+      const productName = card.querySelector('.product-name').textContent;
+      alert(`${productName} adicionado ao carrinho!`);
+    });
+  });
+});
+</script>
+</body></html>
