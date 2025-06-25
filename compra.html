@@ -227,15 +227,15 @@
     function getProductImage(name) {
       const images = {
         'Flor de Ouro': 'perfume11.png',
-        'Brisa Oceânica': 'perfume2.jpg',
-        'Paixão Ardente': 'perfume3.jpg',
-        'Noite Estrelada': 'perfume4.jpg',
-        'Selva Tropical': 'perfume5.jpg',
-        'Glamour Noturno': 'perfume6.jpg',
-        'Tesouro Real': 'perfume7.jpg',
-        'Pétalas de Rosa': 'perfume8.jpg'
+        'Brisa Oceânica': 'perfume2.png',
+        'Paixão Ardente': 'perfume12.png',
+        'Noite Estrelada': 'perfume4.png',
+        'Selva Tropical': 'perfume5.png',
+        'Glamour Noturno': 'perfume6.png',
+        'Tesouro Real': 'perfume7.png',
+        'Pétalas de Rosa': 'perfume8.png'
       };
-      return images[name] || 'perfume1.jpg';
+      return images[name] || 'perfume1.png';
     }
     
     document.getElementById('product-img').src = getProductImage(productName);
